@@ -1,0 +1,63 @@
+# module 5 lab part 2
+
+# Psuedocode part!
+"""
+totalBottles = 0
+counter = 1
+todayBottles = 0
+totalPayout = 0
+keepGoing = "y"
+
+
+
+while (keepGoing=="y"):
+    getBottles()
+    CalcPayout(totalBottles)
+    printInfo(totalBottles, totalPayout)
+    keepGoing = input("Do you want to exit?: ")
+
+totalBottles = 0
+counter = 1
+todayBottles = 0
+
+while(counter < NBR_OF_DAYS):
+    input todayBottles
+    totalBottles = totalBottles + todayBottles
+    counter = counter + 1
+
+totalPayout = totalBottles * PAYOUT_PER_BOTTLE
+
+print("Total number of bottles: "+ totalBottles)
+print("The total payout: " + totalPayout)
+
+--
+# module 5 lab part 2
+
+# initialazation part
+
+"""
+# Module 5 Lab Part 2 - Working Code
+
+keepGoing = "y"
+
+NBR_OF_DAYS = 7
+
+while (keepGoing=="y"):
+    totalBottles = 0
+    counter = 0
+    todayBottles = 0
+    totalPayout = 0
+    while(counter < NBR_OF_DAYS):
+        todayBottles = int(input("Enter bottles for day #"+ str(counter + 1) +": "))
+        totalBottles = totalBottles + todayBottles
+        counter = counter + 1
+    PAYOUT_PER_BOTTLE = .10
+    totalPayout = totalBottles * PAYOUT_PER_BOTTLE
+    print("\nThe total number of bottles collected is: "+ str(totalBottles))
+    print("The total paid out is: %.2f" % totalPayout)
+    keepGoing = input("\nDo you want to enter another week's worht of data?: ")
+
+
+
+
+
